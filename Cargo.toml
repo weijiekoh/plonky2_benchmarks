@@ -1,0 +1,9 @@
+[package]
+name = "plonky2_benchmarks"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+plonky2 = "1.0.0"
+stopwatch = "0.0.7"
+anyhow = { version = "1.0.40", default-features = false }
