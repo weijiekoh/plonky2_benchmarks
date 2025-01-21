@@ -13,7 +13,7 @@ fn main() {
     for i in start..end {
         let fib_size = 2u32.pow(i);
         let time = do_benchmark(fib_size);
-        println!("Pure-plonky2 proof generation time for Fib 2 ^ {}: {} ms", i, time);
+        println!("Pure-plonky2 proof generation time for Fib 2^{}: {} ms", i, time);
     }
 }
 
@@ -66,4 +66,9 @@ fn do_benchmark(fib_size: u32) -> i64 {
     //data.verify(proof);
 
     proof_time
+}
+
+#[test]
+fn test() {
+    println!("Hello, world!");
 }
